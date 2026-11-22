@@ -1,5 +1,7 @@
  <div align="center">
 
+https://github.com/user-attachments/assets/2d946785-e273-42e9-ac8b-b34c344fce0e
+Uploading 053236ad7a307ac5efd22e838deb1424_720w.mp4…
 # ANUR NIMATOV
 
 ### FULL-STACK DEVELOPER
