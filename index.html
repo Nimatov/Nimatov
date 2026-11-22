@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080a12">
+  <meta name="description" content="Anur Nimatov — Full-Stack Developer building modern web applications and digital experiences.">
+  <title>Anur Nimatov — Full-Stack Developer</title>
+  <style>
+    :root{--bg:#080a12;--fg:#f7f8ff;--muted:#a7afc2;--line:rgba(255,255,255,.13);--glass:rgba(10,13,23,.68);--accent:#8b9cff}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--bg);color:var(--fg);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
+    a{color:inherit;text-decoration:none}.ambient{position:fixed;inset:0;z-index:-3;overflow:hidden;background:#080a12}
+    .ambient video{position:absolute;width:100%;height:100%;object-fit:cover;filter:blur(28px) brightness(.32) saturate(1.15);transform:scale(1.12)}
+    .ambient:after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,rgba(4,7,16,.9),rgba(7,10,20,.54) 55%,rgba(4,7,16,.86))}
+    .hero{min-height:100svh;position:relative;display:grid;place-items:center;padding:34px 22px;isolation:isolate}
+    .hero-video{position:absolute;inset:0;z-index:-1;display:flex;justify-content:center;align-items:center;overflow:hidden}
+    .hero-video video{height:100%;width:auto;max-width:100%;object-fit:contain;box-shadow:0 0 100px rgba(0,0,0,.55);filter:brightness(.55)}
+    .hero-shade{position:absolute;inset:0;background:linear-gradient(0deg,rgba(4,6,13,.88),rgba(4,6,13,.08) 55%,rgba(4,6,13,.48));pointer-events:none}
+    .hero-content{width:min(100%,1000px);text-align:center;padding:36px 24px;z-index:1}
+    .eyebrow{display:inline-flex;align-items:center;gap:9px;border:1px solid var(--line);background:rgba(7,10,20,.48);padding:9px 15px;border-radius:999px;color:#dce2f4;font-size:12px;letter-spacing:.2em;text-transform:uppercase;backdrop-filter:blur(12px)}
+    .dot{width:7px;height:7px;border-radius:50%;background:#8effc4;box-shadow:0 0 15px #8effc4}
+    h1{font-size:clamp(46px,9vw,100px);letter-spacing:-.075em;line-height:.96;margin:27px 0 14px;font-weight:850;text-shadow:0 6px 35px #000}
+    .role{font-size:clamp(15px,2.2vw,22px);letter-spacing:.32em;text-transform:uppercase;color:#e2e7f7;margin:0 0 17px}
+    .tagline{color:#d0d6e6;font-size:clamp(14px,1.8vw,17px);line-height:1.7;max-width:620px;margin:0 auto 27px}
+    .actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+    .btn{border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.09);padding:13px 20px;border-radius:12px;font-size:14px;font-weight:650;backdrop-filter:blur(12px);transition:.2s}
+    .btn.primary{background:#f5f6ff;color:#111522;border-color:#f5f6ff}.btn:hover{transform:translateY(-3px);background:rgba(255,255,255,.18)}.btn.primary:hover{background:#dce2ff}
+    .scroll{position:absolute;bottom:22px;left:50%;transform:translateX(-50%);font-size:10px;letter-spacing:.25em;text-transform:uppercase;color:#c0c7d9}
+    main{width:min(1100px,calc(100% - 36px));margin:0 auto;padding:70px 0 90px}
+    .section{margin:0 0 26px;padding:30px;border:1px solid var(--line);border-radius:22px;background:var(--glass);backdrop-filter:blur(18px);box-shadow:0 18px 70px rgba(0,0,0,.2)}
+    .kicker{color:var(--accent);font-size:11px;letter-spacing:.22em;text-transform:uppercase;font-weight:750}
+    h2{font-size:clamp(25px,4vw,36px);letter-spacing:-.04em;margin:9px 0 16px}.copy{color:var(--muted);line-height:1.8;margin:0}
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+    .tile{padding:20px;border:1px solid var(--line);border-radius:16px;background:rgba(255,255,255,.035)}
+    .tile h3{font-size:16px;margin:0 0 8px}.tile p{color:var(--muted);font-size:13px;line-height:1.65;margin:0 0 14px}
+    .tile a{color:#cbd3ff;font-size:13px;font-weight:700}
+    .chips{display:flex;gap:9px;flex-wrap:wrap}.chip{border:1px solid var(--line);background:rgba(255,255,255,.055);padding:9px 12px;border-radius:10px;color:#dbe1f2;font-size:13px}
+    footer{text-align:center;color:#8992a8;font-size:12px;padding:22px}
+    @media(max-width:650px){.hero{padding:20px 14px}.hero-content{padding:26px 12px}.role{letter-spacing:.2em}.section{padding:23px 19px}.grid{grid-template-columns:1fr}main{padding-top:42px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+  </style>
+</head>
+<body>
+  <div class="ambient" aria-hidden="true"><video autoplay muted loop playsinline preload="auto"><source src="assets/background-video.mp4" type="video/mp4"></video></div>
+  <header class="hero">
+    <div class="hero-video" aria-hidden="true"><video autoplay muted loop playsinline preload="auto"><source src="assets/background-video.mp4" type="video/mp4"></video></div>
+    <div class="hero-shade"></div>
+    <div class="hero-content">
+      <div class="eyebrow"><span class="dot"></span> Available for interesting opportunities</div>
+      <h1>ANUR<br>NIMATOV</h1>
+      <p class="role">Full-Stack Developer</p>
+      <p class="tagline">Building modern web applications &amp; digital experiences. Turning ideas into practical products through clean code, creative thinking and continuous learning.</p>
+      <nav class="actions" aria-label="Main links">
+        <a class="btn primary" href="https://github.com/Nimatov" target="_blank" rel="noreferrer">GitHub Profile ↗</a>
+        <a class="btn" href="https://nimatovportfolio.netlify.app/" target="_blank" rel="noreferrer">Portfolio ↗</a>
+        <a class="btn" href="https://t.me/nimatov_anur_azizovich" target="_blank" rel="noreferrer">Telegram ↗</a>
+      </nav>
+    </div>
+    <a class="scroll" href="#about">Scroll to explore ↓</a>
+  </header>
+  <main id="about">
+    <section class="section">
+      <div class="kicker">01 / About</div><h2>Code with purpose. Build with curiosity.</h2>
+      <p class="copy">I am a Full-Stack Developer focused on building modern, responsive and scalable web applications. I enjoy turning ideas into practical digital products through clean code, creative thinking and continuous learning.</p>
+    </section>
+    <section class="section">
+      <div class="kicker">02 / Tech stack</div><h2>Tools I work with</h2>
+      <div class="chips">
+        <span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">JavaScript</span><span class="chip">Bootstrap</span><span class="chip">PHP</span><span class="chip">Laravel</span><span class="chip">MySQL</span><span class="chip">SQL</span>
+      </div>
+    </section>
+    <section class="section">
+      <div class="kicker">03 / Selected work</div><h2>Featured projects</h2>
+      <div class="grid">
+        <article class="tile"><h3>01. Smart Jizzakh Bot</h3><p>A Telegram bot project.</p><a href="https://github.com/Nimatov/smart-jizzakh-bot" target="_blank" rel="noreferrer">View repository ↗</a></article>
+        <article class="tile"><h3>02. Freelance IT Bot</h3><p>A Telegram bot project.</p><a href="https://github.com/Nimatov/fre_elanceit_bot" target="_blank" rel="noreferrer">View repository ↗</a></article>
+      </div>
+    </section>
+    <section class="section">
+      <div class="kicker">04 / Connect</div><h2>Let's build something great together.</h2>
+      <p class="copy">Open to interesting projects, collaborations and new opportunities.</p>
+      <div class="actions" style="justify-content:flex-start;margin-top:20px">
+        <a class="btn primary" href="https://t.me/nimatov_anur_azizovich">Contact me</a>
+        <a class="btn" href="https://github.com/Nimatov" target="_blank" rel="noreferrer">GitHub ↗</a>
+        <a class="btn" href="https://t.me/nimatov_anur_azizovich" target="_blank" rel="noreferrer">Telegram ↗</a>
+      </div>
+    </section>
+    <footer>ANUR NIMATOV © 2026 · Designed &amp; built with care</footer>
+  </main>
+</body>
+</html>
