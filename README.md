@@ -8,7 +8,7 @@
 
 I am a Full-Stack Developer focused on building modern, responsive and scalable web applications. I enjoy turning ideas into practical digital products through clean code, creative thinking and continuous learning.
 
-[Portfolio](YOUR_PORTFOLIO_URL) · [GitHub](https://github.com/Nimatov) · [Telegram](https://t.me/nimatov_anur_azizovich)
+[Portfolio](https://nimatovportfolio.netlify.app/) · [Portfolio](https://nimatovportfolio.lovable.app/) · [GitHub](https://github.com/Nimatov) · [Telegram](https://t.me/nimatov_anur_azizovich)
 
 </div>
 
